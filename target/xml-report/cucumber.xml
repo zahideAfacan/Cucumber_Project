@@ -1,19 +1,103 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="11.286" tests="1" skipped="0" failures="1" errors="0">
-<testcase classname="hook_test" name="TC_01_tets" time="10.976">
-<failure type="java.lang.AssertionError">
-<![CDATA[java.lang.AssertionError
-	at org.junit.Assert.fail(Assert.java:87)
-	at org.junit.Assert.assertTrue(Assert.java:42)
-	at org.junit.Assert.assertTrue(Assert.java:53)
-	at stepdefinitions.LoginStepDefinitions.verify_the_next_page_url_contains_login_keyword(LoginStepDefinitions.java:44)
-	at ✽.verify the next page url contains login keyword(file:///Users/admin/IdeaProjects/my-cucmber-project/./src/test/resources/features/day26_failed_test_cases.feature:8)
+<testsuite name="Cucumber" time="104.749" tests="4" skipped="0" failures="1" errors="0">
+<testcase classname="Medunna Room Creation" name="Create Room - Example #1.1" time="28.344">
+<failure type="org.junit.ComparisonFailure" message="expected:&lt;[119072975]&gt; but was:&lt;[274501]&gt;">
+<![CDATA[org.junit.ComparisonFailure: expected:<[119072975]> but was:<[274501]>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at stepdefinitions.MedunnaRoomStepDefs.assert_that_room_is_created_via(MedunnaRoomStepDefs.java:88)
+	at ✽.assert that room is created via "119072975"(file:///Users/admin/IdeaProjects/my-cucmber-project/./src/test/resources/features/medunna_room.feature:24)
 ]]>
 </failure>
 <system-out><![CDATA[
-Given user on "https://www.bluerentalcars.com/login" page...................passed
-And user enters cutomer_email and customer_password.........................passed
-Then verify the next page url contains login keyword........................failed
+Given user on "https://medunna.com" page....................................passed
+When click on user icon.....................................................passed
+And click on Sign In option.................................................passed
+And enter "john_doe" in username input......................................passed
+And enter "John.123" in password input......................................passed
+And click on Remember Me checkbox...........................................passed
+And click on Sign In submit button..........................................passed
+When click on Items&Titles..................................................passed
+And click on Room option....................................................passed
+And click on Create a new room button.......................................passed
+And enter "119072975" in Room Number input..................................passed
+And select Suit option from Room Type dropdown..............................passed
+And click on status checkbox................................................passed
+And enter "345" in Price input..............................................passed
+And enter "Room 1" in Description input.....................................passed
+And click on Save button....................................................passed
+And click on Created Date...................................................passed
+Then assert that room is created via "119072975"............................failed
+Then close the application..................................................skipped
+]]></system-out>
+</testcase>
+<testcase classname="Medunna Room Creation" name="Create Room - Example #1.2" time="25.519">
+<system-out><![CDATA[
+Given user on "https://medunna.com" page....................................passed
+When click on user icon.....................................................passed
+And click on Sign In option.................................................passed
+And enter "john_doe" in username input......................................passed
+And enter "John.123" in password input......................................passed
+And click on Remember Me checkbox...........................................passed
+And click on Sign In submit button..........................................passed
+When click on Items&Titles..................................................passed
+And click on Room option....................................................passed
+And click on Create a new room button.......................................passed
+And enter "869077822" in Room Number input..................................passed
+And select Suit option from Room Type dropdown..............................passed
+And click on status checkbox................................................passed
+And enter "567" in Price input..............................................passed
+And enter "My Resting Room" in Description input............................passed
+And click on Save button....................................................passed
+And click on Created Date...................................................passed
+Then assert that room is created via "869077822"............................passed
+Then close the application..................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Medunna Room Creation" name="Create Room - Example #1.3" time="25.216">
+<system-out><![CDATA[
+Given user on "https://medunna.com" page....................................passed
+When click on user icon.....................................................passed
+And click on Sign In option.................................................passed
+And enter "john_doe" in username input......................................passed
+And enter "John.123" in password input......................................passed
+And click on Remember Me checkbox...........................................passed
+And click on Sign In submit button..........................................passed
+When click on Items&Titles..................................................passed
+And click on Room option....................................................passed
+And click on Create a new room button.......................................passed
+And enter "996254360" in Room Number input..................................passed
+And select Suit option from Room Type dropdown..............................passed
+And click on status checkbox................................................passed
+And enter "543" in Price input..............................................passed
+And enter "Good viewed" in Description input................................passed
+And click on Save button....................................................passed
+And click on Created Date...................................................passed
+Then assert that room is created via "996254360"............................passed
+Then close the application..................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Medunna Room Creation" name="Create Room - Example #1.4" time="25.437">
+<system-out><![CDATA[
+Given user on "https://medunna.com" page....................................passed
+When click on user icon.....................................................passed
+And click on Sign In option.................................................passed
+And enter "john_doe" in username input......................................passed
+And enter "John.123" in password input......................................passed
+And click on Remember Me checkbox...........................................passed
+And click on Sign In submit button..........................................passed
+When click on Items&Titles..................................................passed
+And click on Room option....................................................passed
+And click on Create a new room button.......................................passed
+And enter "876765920" in Room Number input..................................passed
+And select Suit option from Room Type dropdown..............................passed
+And click on status checkbox................................................passed
+And enter "222" in Price input..............................................passed
+And enter "Need extra service" in Description input.........................passed
+And click on Save button....................................................passed
+And click on Created Date...................................................passed
+Then assert that room is created via "876765920"............................passed
+Then close the application..................................................passed
 ]]></system-out>
 </testcase>
 </testsuite>
